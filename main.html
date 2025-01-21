@@ -5,31 +5,44 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 	<style>
-		div{
+		.root{
 			background-color:rgb(135, 206, 235);
 		}
-		ul{
+		li{
 			background-color:gray;
 			width:50%;
 			padding:10px;
+		}
+		li:nth-child(odd){
+			background:white;
+		}
+		.a{font-size:22px}
+		.b{background-color:pink !important;}
+		p:first-child{
+			color:white;
+			background:black;
+		}
+		.last{
+			color:red;
 		}
 	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-	<div>
+	<article class="root">
+		<h1>First paragraph</h1>
 		<p>Social media platforms allow user to have conversation,share information and create web content.</p>
 		<p>There are many form of social media,including Blogs,micro-blogs,wikis,social networking site,podcast and more</p>
-		<p>Social media helps people stay in touch with friend and family,even if they live far away.</p>
+		<p class="last">Social media helps people stay in touch with friend and family,even if they live far away.</p>
 		<ul>
 			<li>First item</li>
 			<li>Second item</li>
-			<li>Third item</li>
+			<li class="b">Third item</li>
 			<li>Fourth item</li>
 			<li>Fith item</li>
 		</ul>
-	</div>
+	</article>
     <script type="text/javascript" src="./script.js">
 </script>
 
